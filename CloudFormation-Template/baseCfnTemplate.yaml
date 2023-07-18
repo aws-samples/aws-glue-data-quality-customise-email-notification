@@ -637,7 +637,7 @@ Resources:
       FunctionName: !Join ['-', [ 'GlueDataQualityBlogAlertLambda' , !Select [4, !Split ['-', !Select [2, !Split ['/', !Ref AWS::StackId]]]]]]
 
       Code:
-        ZipFile: |
+        ZipFile: !Sub |
           import boto3
           import json
           from datetime import datetime
@@ -646,8 +646,8 @@ Resources:
           s3_client = boto3.client('s3')
           glue_client = boto3.client('glue')
 
-          sns_topic_arn = 'sns_topic_arn'
-          s3_bucket = 's3bucket'
+          sns_topic_arn = '${ResourceSNSTopicNameAlertNotification}'
+          s3bucket = '${GlueDataQualityResultsS3Bucket}'
 
           def write_logs(log_metadata):
               try:
