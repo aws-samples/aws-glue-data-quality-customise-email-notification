@@ -6,8 +6,9 @@ sns_client = boto3.client('sns')
 s3_client = boto3.client('s3')
 glue_client = boto3.client('glue')
 
-sns_topic_arn = 'AWS CloudFormation outputs key:DataQualityS3BucketNameOutputs'
-s3_bucket = 'AWS CloudFormation outputs key:DataQualityS3BucketNameOutputs'
+sns_topic_arn = 'Replace with SNS topic ARN'
+s3bucket = 'Provide the s3 bucket name without s3://'
+
 
 def write_logs(log_metadata):
     try:
