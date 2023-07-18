@@ -2,7 +2,7 @@
 
 This repository consists a Cloudformation template and Lambda function for AWS Glue Data Quality Alert and Notification feature. Here is the architecture diagram
 
-![img.png](img_1.png)
+![img.png](media/img2.png)
 
 ## Getting started
 
@@ -13,7 +13,7 @@ This code uses an input dataset [yellow_tripdata_2022-01](https://d37ci6vzurychx
 
 The following sample email provides operational metrics for the AWS Glue Data Quality ruleset evaluation. It provides details about the ruleset name, the number of rules passed or failed, and the score. This helps you visualize the results of each rule along with the evaluation message if a rule fails.
 
-![img.png](img.png)
+![img.png](media/img1.png)
 
 ## Security
 
