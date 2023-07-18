@@ -9,7 +9,7 @@ This repository consists a Cloudformation template and Lambda function for AWS G
 
 This document is designed to be used with the AWS Big Data Blog titled [Set up alerts and orchestrate data quality rules with AWS Glue Data Quality](https://aws.amazon.com/blogs/big-data/set-up-alerts-and-orchestrate-data-quality-rules-with-aws-glue-data-quality/)
 
-This code uses an input dataset [yellow_tripdata_2022-01](https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2022-01.parquet/). The CloudFormation template can be launched in any AWS regions and it creates different AWS services example - AWS Step Functions, EventBridge Rule, Lambda Function, Glue Data Quality Ruleset, S3 buckets and SNS topic.
+This code uses an input dataset [yellow_tripdata_2022-01](https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2022-01.parquet/). 
 
 The AWS Cloudformation template deploys different AWS services example - AWS Step Functions, Amazon EventBridge, AWS Lambda Function, AWS Glue Data Quality Rules, Amazon S3 buckets and Amazon SNS topics.
 
